@@ -1,0 +1,21 @@
+# first experiment run on carmine @ uvt with default parameters
+
+# data
+audio_features_fn: mfcc_features.pt
+flickr8k_root: /roaming/gchrupal/datasets/flickr8k/
+flickr8k_meta: dataset.json
+flickr8k_audio_subdir: flickr_audio/wavs/
+flickr8k_image_subdir: Flickr8k_Dataset/Flicker8k_Dataset/
+flickr8k_language: en
+
+# training
+seed: 123
+epochs: 32
+lr_scheduler: cyclic
+batch_size: 32
+
+# model
+trafo_d_model: 512
+trafo_encoder_layers: 4
+trafo_heads: 8
+trafo_feedforward_dim: 1024
